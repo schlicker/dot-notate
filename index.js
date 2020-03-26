@@ -5,7 +5,7 @@ module.exports = function dotNotate(object, target, prefix) {
     prefix = prefix || '';
 
     Object.keys(object).forEach(key => {
-        if (typeof object[key] === 'object') {
+        if (typeof object[key] === 'object' && object[key] !== null) {
             dotNotate(object[key], target, prefix + key + '.');
         } else {
             return (target[prefix + key] = object[key]);
