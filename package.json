@@ -1,7 +1,7 @@
 {
     "name": "dot-notate",
     "version": "1.1.1",
-    "description": "Converts an object into a one dimensional object with its attributes separated by '.'.",
+    "description": "Converts an object into a one dimensional object with its attributes keys separated by . or another separator",
     "main": "index.js",
     "scripts": {
         "test": "mocha"
