@@ -9,13 +9,7 @@ dot-notate converts an object into a one dimensional object with its attributes 
 ```javascript
 var dotNotate = require('dot-notate');
 
-console.log(
-    dotNotate({
-        this: {
-            is: 'an example'
-        }
-    })
-);
+console.log(dotNotate({ this: { is: 'an example' } }));
 ```
 
 The above code will result in the following object:
@@ -31,16 +25,7 @@ The above code will result in the following object:
 ```javascript
 var dotNotate = require('dot-notate');
 
-console.log(
-    dotNotate(
-        {
-            this: {
-                is: 'an example'
-            }
-        },
-        '|'
-    )
-);
+console.log(dotNotate({ this: { is: 'an example' } }, '|'));
 ```
 
 The above code will result in the following object:
